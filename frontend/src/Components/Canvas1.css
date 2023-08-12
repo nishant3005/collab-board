@@ -1,21 +1,24 @@
-@import url("https://fonts.googleapis.com/css?family=Kalam");
+@import url('https://fonts.googleapis.com/css?family=Kalam');
 body {
-  background: rgb(18, 100, 87);
+  background: rgb(137, 241, 234);
   overflow: hidden !important;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
 }
 /* ----- BLACKBOARD ----- */
 .blackboard {
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
- 
 }
 
 canvas {
   display: block;
-  cursor:crosshair;
+  cursor: crosshair;
   /* cursor: url(https://abs.twimg.com/emoji/v2/72x72/1f525.png) 36 36, auto; */
   width: 100vw;
   /* height: 95vw; */
@@ -48,13 +51,19 @@ canvas {
   background-color: rgba(var(--font-color), 0.05);
   border-radius: 0.9rem;
   box-shadow: 0 0.25rem 1rem 0.2rem rgba(0, 0, 0, 0.15);
-  background-color: #ff9819;
+  background-color: #f2a3d6;
+}
+
+.frame-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .frame::before {
   background-color: #8dbbff;
 }
-
 
 .color-picker {
   border-radius: 30%;
@@ -90,7 +99,7 @@ button.btn {
 }
 button.btn::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   top: 0;

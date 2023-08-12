@@ -153,23 +153,26 @@ const Canvas = () => {
     <>
       <div className="blackboard">
         <figure className="frame">
-          <div className="color-picker-wrapper">
-            <input
-              className="color-picker"
-              type="color"
-              defaultValue="#EFEFEF"
-              onChange={(e) => changeColor(e.target.value)}
-            />
-            <input
-              min="2"
-              max="50"
-              type="range"
-              value={brushRadius}
-              onChange={(event) => {
-                changeBrushSize(parseInt(event.target.value));
-              }}
-            />
-            <span>{brushRadius}</span>
+          <div className="frame-top">
+            <div className="logo">collab-board</div>
+            <div className="color-picker-wrapper">
+              <input
+                className="color-picker"
+                type="color"
+                defaultValue="#EFEFEF"
+                onChange={(e) => changeColor(e.target.value)}
+              />
+              <input
+                min="2"
+                max="50"
+                type="range"
+                value={brushRadius}
+                onChange={(event) => {
+                  changeBrushSize(parseInt(event.target.value));
+                }}
+              />
+              <span>{brushRadius}</span>
+            </div>
           </div>
           <canvas className="canvas" id="canvas"></canvas>
         </figure>
