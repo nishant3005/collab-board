@@ -1,7 +1,7 @@
 # collab-board
 collab-board is a full-stack web application having features of shared canvas with capabilities such as drawing, erasing, dynamic brush size, color adjustment and canvas clearing. Multiple users can collaborate on collab-board.
 
-### To visit dev-gram click [here](https://colllabboarddd.netlify.app/)
+### To visit collab-board click [here](https://colllabboarddd.netlify.app/)
 ## Features:
 
 * Users can share the same canvas and collaborate.
